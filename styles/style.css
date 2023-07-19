@@ -25,6 +25,14 @@ body {
 
 }
 
+.gradiant-style {
+    background: var(--gradian-background-color);
+    font-size: 2.5rem;
+    font-weight: 700;
+    color : transparent;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+}
 
 /* header styles started */
 .nav-content {
@@ -129,7 +137,7 @@ body {
 /* online game section styles */
 .online-games h1 {
     color: var(--heading-text-color);
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 700;
     text-align: center;
 }
@@ -169,7 +177,6 @@ body {
     transition: 1s;
 }
 .video-play-overlay  {
-    color: #FF42A5;
     position: absolute;
     top: 0;
     left: 0;
@@ -181,12 +188,61 @@ body {
     align-items: center;
     opacity: 0;
 }
+
+.video-play-overlay a {
+    color: var(--primary-color)
+}
 .card:hover .video-play-overlay {
     border-radius: 16px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.438) 0%, rgba(0, 0, 0, 0.60) 100%);
     opacity: 1;
 }
 
+
+/* play instantly section */
+.play-instantly-container {
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.play-instantly-title {
+    width: 80%;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.play-instantly-content{
+    padding-top: 80px;
+    width: 50%;
+}
+
+.play-instantly-content  p {
+    width: 60%;
+    padding-top: 20px;
+    line-height: 20px;
+    color: var(--primary-text-color);
+    font-size: 0.9rem;
+    text-align: right;
+    
+}
+
+.play-instanly-img {
+    width: 50%;
+}
+
+.play-instanly-img img {
+    width: 100%;
+
+}
+
+.sub-image img {
+    width: 40%;
+    position: relative;
+    bottom: 200px;
+    right: 60px;
+}
 /* Responsive Styles */
 
 /* Mobile Device */
@@ -239,6 +295,42 @@ body {
     .card-container {
         grid-template-columns: repeat(1 ,1fr);
     }
+
+    /* play instantly section */
+    .play-instantly-container {
+        flex-direction: column;
+    }
+
+    .play-instantly-title {
+        width: 100%;
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 700;
+    }
+
+    .play-instantly-content  p {
+        width: 100%;
+        text-align: center;
+        
+    }
+
+    .play-instanly-img {
+        width: 80%;
+        margin: auto;
+    }
+
+    .play-instantly-content{
+        padding-top: 20px;
+        width: 100%;
+    }
+
+    .sub-image img {
+        width: 40%;
+        position: relative;
+        bottom: 90px;
+        right: 50px;
+    }
+    
 }
 
 /* Midium Device */
@@ -264,4 +356,40 @@ body {
     .card-container {
         grid-template-columns: repeat(2 ,1fr);
     }
+
+    /* play instantly section */
+    .play-instantly-container {
+        flex-direction: column;
+    }
+
+    .play-instantly-title {
+        width: 100%;
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 700;
+    }
+
+    .play-instantly-content  p {
+        width: 100%;
+        text-align: center;
+        
+    }
+
+    .play-instanly-img {
+        width: 90%;
+        margin: auto;
+    }
+
+    .play-instantly-content{
+        padding-top: 20px;
+        width: 100%;
+    }
+
+    .sub-image img {
+        width: 40%;
+        position: relative;
+        bottom: 140px;
+        right: 40px;
+    }
+
 }
