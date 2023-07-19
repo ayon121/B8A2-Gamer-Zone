@@ -202,7 +202,9 @@ body {
 /* play instantly section */
 .play-instantly-container {
     width: 80%;
-    margin: 50px auto;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 10px;
     display: flex;
     gap: 1.5rem;
 }
@@ -242,6 +244,51 @@ body {
     position: relative;
     bottom: 200px;
     right: 60px;
+}
+
+
+/* icon button styles */
+.icon-container {
+    width: 90%;
+    margin: 10px auto;
+    
+}
+.icon-button {
+    width: 100%;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(5 , 1fr);
+    grid-template-rows: repeat(2 , 1fr);
+    justify-content: center;
+    gap: 20px;
+}
+
+.icon-button button {
+    width: 100%;
+    margin: auto;
+    font-size: 1rem;
+    border-radius: 50px;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    transition: 0.3s;
+    margin-left: 10px;
+    margin-top: 20px;
+
+}
+
+.icon-button img {
+    width: 40px;
+    height: 40px;
+    padding: 4px;
+}
+
+.icon-button button:hover {
+    color: var(--primary-color);
+    border: 3px solid var(--primary-color);
+
 }
 /* Responsive Styles */
 
@@ -331,6 +378,33 @@ body {
         right: 50px;
     }
     
+    /* icon button  styles */
+    .icon-container {
+        width: 100%;
+        
+    }
+    .icon-button {
+        width: 100%;
+        grid-template-columns: repeat(3 , 1fr);
+        grid-template-rows: repeat(3 , 1fr);
+        gap: 15px;
+    }
+
+    .icon-button img {
+        width: 30px;
+        height: 30px;
+        padding: 4px;
+    }
+
+    .icon-button button {
+        width: 80%;
+        margin: auto;
+        font-size: 0.7rem;
+        margin-top: 20px;
+    
+    }
+
+    
 }
 
 /* Midium Device */
@@ -390,6 +464,32 @@ body {
         position: relative;
         bottom: 140px;
         right: 40px;
+    }
+
+    /* icon button styles */
+    .icon-container {
+        width: 100%;
+        
+    }
+    .icon-button {
+        width: 100%;
+        grid-template-columns: repeat(3 , 1fr);
+        grid-template-rows: repeat(3 , 1fr);
+        gap: 15px;
+    }
+
+    .icon-button img {
+        width: 40px;
+        height: 40px;
+        padding: 5px;
+    }
+
+    .icon-button button {
+        width: 80%;
+        margin: auto;
+        font-size: .8rem;
+        margin-top: 20px;
+    
     }
 
 }
